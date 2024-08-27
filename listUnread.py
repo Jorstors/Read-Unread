@@ -6,7 +6,6 @@ from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 
-# If modifying these scopes, delete the file token.json.
 SCOPES = ["https://www.googleapis.com/auth/gmail.readonly"]
 
 
@@ -49,7 +48,6 @@ def main():
         emailCount+=1
         eml = service.users().messages().get(userId="me", id=email["id"]).execute()
 
-        subject = ""
         for header in eml['payload']['headers']:
           if header['name'] == 'Subject':
             subject = header['value']
