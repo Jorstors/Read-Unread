@@ -9,7 +9,6 @@ This project is a simple Python application that interacts with the Gmail API to
 - **token.json**: Stores the OAuth2 access and refresh tokens, used to authenticate API requests.
 - **unread.csv**: Output file where the script saves the list of unread emails.
 - **requirements.txt**: Lists the Python packages required to run the project.
-- **.gitignore**: Specifies the files to ignore in version control (e.g., credentials and token files).
 
 ## Features
 
@@ -36,7 +35,7 @@ This project leverages the following technologies:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/unread-emails.git
+    git clone https://github.com/Jorstors/Read-Unread
     ```
 
 2. Install the required dependencies:
